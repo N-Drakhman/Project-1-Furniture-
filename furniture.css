@@ -163,10 +163,12 @@
     grid-template-rows: repeat(2, 198px);
     margin: 32px 0;
     gap: 24px 8px;
+    justify-content: center;
   }
 
   .help {
     max-width: 270px;
+    min-width: 123px;
     width: 100%;
     padding: 32px 16px 32px 16px;
   }
