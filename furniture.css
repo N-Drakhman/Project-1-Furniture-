@@ -76,7 +76,7 @@
   justify-content: flex-end;
 }
 
-.Service {
+.service {
   max-width: 1122px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -133,12 +133,11 @@
 }
 
 @media screen and (max-width: 992px) {
-  /* Добавил margin по бокам как в мобильной версии в Фигме */
   body {
-    margin: 0 32px;
+    padding: 0 32px;
   }
 
-  /* Categories styles */
+  /* categories styles */
   .categories {
     width: 100%;
     display: grid;
@@ -156,8 +155,8 @@
     justify-self: center;
   }
 
-  /* Service styles */
-  .Service {
+  /* service styles */
+  .service {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 198px);
@@ -189,7 +188,7 @@
     line-height: 22px;
   }
 
-  span {
+  .help-description span {
     display: block;
   }
 }
