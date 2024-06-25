@@ -89,6 +89,7 @@
   padding: 48px 32px;
   background-color: #f3f5f7;
   max-width: 262px;
+  height: 220px;
   width: 100%;
   cursor: pointer;
 }
@@ -168,6 +169,7 @@
   .help {
     max-width: 270px;
     min-width: 123px;
+    height: 198px;
     width: 100%;
     padding: 32px 16px 32px 16px;
   }
@@ -175,6 +177,7 @@
   .help[data-value="free-shipping"],
   .help[data-value="secure-payment"] {
     justify-self: flex-end;
+    gap: 20px;
   }
 
   .help-title {
