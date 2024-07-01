@@ -14,11 +14,36 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="furniture.css" />
     <title>Simply Unique / Simply Better.</title>
   </head>
   <body>
     <div class="webpage-body">
+      
+      <!-- Swiper : Slider -->
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/big-sofa1.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/big-sofa2.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/big-sofa3.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
       <!--  Categories cascade  -->
       <div class="categories">
         <div class="category" data-value="living">
@@ -36,6 +61,30 @@
           <div class="category-link">Shop Now</div>
         </div>
       </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".slider", {
+          spaceBetween: 30,
+          // autoplay: {
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // },
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     </div>
   </body>
 </html>

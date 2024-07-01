@@ -12,6 +12,54 @@
   overflow-x: hidden;
 }
 
+/* ------------------------------------------------------ Slider */
+.slider img {
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c7275;
+  margin: 0 32px;
+  top: calc(50% - 26px);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  background: url("./images/arrow.svg");
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-button-next::after {
+  background: url("./images/arrow.svg");
+  transform: rotate(180deg);
+}
+
+.swiper-pagination-bullet {
+  background: #fefefe;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px;
+  border-radius: 100px;
+}
+
+.swiper-pagination {
+  padding-bottom: 32px;
+  min-width: 100px;
+}
+
 /* ------------------------------------------------------ Categories cascade */
 .categories {
   width: 100%;
@@ -91,6 +139,26 @@
   .webpage-body {
     padding: 0 32px;
     overflow-x: hidden;
+  }
+
+   /* ------------------------------------------------------ Slider  */
+  .slider {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .slider img {
+    height: 304px;
+    object-fit: cover;
+  }
+
+  .swiper-pagination {
+    padding-bottom: 16px;
   }
 
   /* ------------------------------------------------------ Categories */
