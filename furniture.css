@@ -1,11 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
-    background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  background-repeat: no-repeat;
 }
+
+.webpage-body {
+  padding: 0 160px;
+  overflow-x: hidden;
+}
+
 /* ------------------------------------------------------ Categories cascade */
 .categories {
   width: 100%;
@@ -76,7 +82,17 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
+  body {
+    position: relative;
+    width: 100%;
+  }
+
+  .webpage-body {
+    padding: 0 32px;
+    overflow-x: hidden;
+  }
+
   /* ------------------------------------------------------ Categories */
   .categories {
     display: grid;
@@ -93,5 +109,4 @@
   .category[data-value="living"] {
     justify-self: center;
   }
-
 }
