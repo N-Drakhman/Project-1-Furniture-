@@ -11,6 +11,65 @@
   padding: 0 160px;
 }
 
+/* ------------------------------------------------------ Navigation-bar styles */
+
+.navigation-bar {
+  height: 60px;
+  padding: 18px 160px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  overflow: auto;
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  width: 105px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #141718;
+}
+
+.logo span {
+  color: #6c7275;
+}
+
+.menu-pages {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-links {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #6c7275;
+}
+
+.menu-links:hover {
+  color: black;
+  transform: scale(1.1);
+  transition: transform color 0.2s;
+}
+
+.menu-links:first-child {
+  color: black;
+}
+
+.shopping-cart {
+  display: flex;
+  gap: 16px;
+}
+
+.shopping-cart img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
 /* ------------------------------------------------------ Categories cascade */
 .categories {
   width: 100%;
@@ -89,7 +148,16 @@
 
   .webpage-body {
     padding: 0 32px;
-    overflow-x: hidden;
+  }
+
+  /* ------------------------------------------------------ navigation bar */
+
+  .navigation-bar {
+    padding: 18px 32px;
+  }
+
+  .menu-pages {
+    display: none;
   }
 
   /* ------------------------------------------------------ Categories */
@@ -107,5 +175,13 @@
 
   .category[data-value="living"] {
     justify-self: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ------------------------------------------------------ navigation bar */
+  .search-button,
+  .account-link {
+    display: none;
   }
 }
