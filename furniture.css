@@ -386,12 +386,14 @@
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     left: 30px;
     margin: 40px 0;
+    width: calc(100% + 64px);
   }
 
   .product-carousel {
     width: calc(100% - 64px);
     left: -30px;
     height: 476px;
+    min-width: 100%;
   }
 
   .product-card {
@@ -412,5 +414,29 @@
     padding: 6px 55px;
     left: 14px;
     top: 253px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+    /* ------------------------------------------------------ Product carousel - carousel */
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    left: 30px;
+    margin: 40px 0;
+    width: calc(100% - 64px);
+  }
+
+
+  .product-carousel {
+    width: calc(100% + 64px);
+    left: -30px;
+    height: 476px;
+    min-width: 100%;
+  }
+
+  .product-card {
+    width: 231px;
+    height: 392px;
   }
 }
