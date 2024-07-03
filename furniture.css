@@ -11,6 +11,11 @@
   padding: 0 160px;
 }
 
+.webpage-body-2 {
+  display: grid;
+  flex-direction: column;
+}
+
 /* ------------------------------------------------------ Navigation-bar styles */
 
 .navigation-bar {
@@ -367,6 +372,7 @@
   /* ------------------------------------------------------ banner */
   .banner {
     max-height: 734px;
+    order: -1;
   }
 
   .banner-image {
