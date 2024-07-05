@@ -70,6 +70,36 @@
   transition: transform 0.2s;
 }
 
+/* ------------------------------------------------------ header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0 40px 0;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-slogan {
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 76px;
+  letter-spacing: -2px;
+  min-width: 575px;
+}
+
+.header-description span,
+.header-slogan span {
+  color: #6c7275;
+}
+
+.header-description {
+  font-weight: 400;
+  max-width: 450px;
+  min-width: 200px;
+  line-height: 26px;
+  text-wrap: wrap;
+}
+
 /* ------------------------------------------------------ Categories cascade */
 .categories {
   width: 100%;
@@ -196,6 +226,15 @@
   background-image: url("/images/24-7-support.svg");
 }
 
+@media screen and (max-width: 1200px) {
+  /* ------------------------------------------------------ header */
+  .header-slogan {
+    font-size: 61px;
+    line-height: 65px;
+    min-width: 460px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   body {
     position: relative;
@@ -270,10 +309,36 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  /* ------------------------------------------------------ header */
+  .header-slogan {
+    width: calc(340px);
+    font-size: 40px;
+    min-width: 310px;
+    line-height: 44px;
+  }
+
+  .header-description {
+    font-size: 14px;
+    line-height: 22px;
+    width: fit-content;
+  }
+}
+
 @media screen and (max-width: 576px) {
   /* ------------------------------------------------------ navigation bar */
   .search-button,
   .account-link {
     display: none;
+  }
+
+  /* ------------------------------------------------------ header */
+  .header {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .header-slogan {
+    font-size: 36px;
   }
 }
