@@ -19,9 +19,16 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/45537/keycap-3-emoji-clipart-md.png"
+    />
+
     <link rel="stylesheet" href="furniture.css" />
     <title>Simply Unique / Simply Better.</title>
   </head>
+
   <body>
     <!-- Navigation bar cascade -->
     <div class="navigation-bar">
@@ -48,7 +55,6 @@
     </div>
 
     <div class="webpage-body">
-
       <!-- Swiper : Slider -->
       <div class="swiper slider">
         <div class="swiper-wrapper">
@@ -216,7 +222,6 @@
         </div>
       </div>
 
-
       <!-- Service cascade -->
       <div class="service">
         <div class="help" data-value="free-shipping">
@@ -243,15 +248,12 @@
       </div>
     </div>
 
-
-       <!-- footer -->
+    <!-- footer -->
     <div class="footer">
       <div class="footer-content">
         <div class="logo-slogan">
           <!-- <div class="footer-logo">3legant<span>.</span></div> -->
-           <a href="" class="footer-logo">
-            3legant<span>.</span>
-           </a>
+          <a href="" class="footer-logo"> 3legant<span>.</span> </a>
           <div class="footer-slogan">Gift & Decoration Store</div>
         </div>
 
@@ -284,44 +286,41 @@
         </div>
       </div>
     </div>
-    
 
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".slider", {
-          spaceBetween: 30,
-          // autoplay: {
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // },
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".slider", {
+        spaceBetween: 30,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
-        var swiper2 = new Swiper(".product-carousel", {
-          slidesPerView: "auto",
-          direction: "horizontal",
-          spaceBetween: 30,
-          centeredSlides: false,
-          freeMode: true,
-          scrollbar: {
-            el: ".swiper-scrollbar",
-          },
-          mousewheel: true,
-        });
-      </script>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      var swiper2 = new Swiper(".product-carousel", {
+        slidesPerView: "auto",
+        direction: "horizontal",
+        spaceBetween: 30,
+        centeredSlides: false,
+        freeMode: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        mousewheel: true,
+      });
+    </script>
   </body>
 </html>
