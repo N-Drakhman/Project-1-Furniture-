@@ -395,7 +395,7 @@
   transition: opacity linear 0.3s;
 }
 
-/* ------------------------------------------------------ Service styles */
+/* ------------------------------------------------------ Service  */
 .service {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -561,7 +561,7 @@
     min-width: 460px;
   }
 
-   /* ------------------------------------------------------ service styles */
+   /* ------------------------------------------------------ service */
   .service {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -582,20 +582,6 @@
     gap: 20px;
   }
 
-  .help-title {
-    font-weight: 600;
-    line-height: 24px;
-    font-size: 14px;
-  }
-
-  .help-title {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .help-description span {
-    display: block;
-  }
 
   /* ------------------------------------------------------ footer */
   .footer {
@@ -829,6 +815,17 @@
   .header-slogan {
     font-size: 36px;
   }
+
+/* ------------------------------------------------------ Service */
+  .help-title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .help-description span {
+    display: block;
+  }
+
 
   /* ------------------------------------------------------ Product carousel - carousel */
   .swiper-horizontal > .swiper-scrollbar,
