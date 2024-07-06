@@ -193,6 +193,7 @@
   min-width: calc(100% + 320px);
   left: -160px;
   height: 485px;
+  padding: 0 160px;
   /* overflow: visible; */
 }
 
@@ -274,14 +275,12 @@
   position: absolute;
   top: 287px;
   left: 16px;
-  /* display: none; */
   opacity: 0;
 }
 
 .add-button:hover {
-  background-color: #18181b;
-  transform: scale(1.05);
-  transition: transform 0.3s;
+  background-color: #262626;
+  transition: all linear .3s;
 }
 
 .add-wishlist-button {
@@ -378,14 +377,15 @@
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     left: 30px;
     margin: 40px 0;
-    width: calc(100% + 64px);
+    width: calc(100% - 64px);
   }
 
   .product-carousel {
-    width: calc(100% - 64px);
-    left: -30px;
+    width: calc(100% + 64px);
+    left: -32px;
     height: 476px;
     min-width: 100%;
+    padding: 0 32px;
   }
 
   .product-card {
