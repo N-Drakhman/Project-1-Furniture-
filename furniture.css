@@ -274,15 +274,12 @@
   position: absolute;
   top: 287px;
   left: 16px;
-  display: none;
+  /* display: none; */
+  opacity: 0;
 }
 
-.product-card:hover .add-button {
-  display: flex;
-}
-
-.add-button:active {
-  background-color: #38cb89;
+.add-button:hover {
+  background-color: #18181b;
   transform: scale(1.05);
   transition: transform 0.3s;
 }
@@ -298,18 +295,13 @@
   position: absolute;
   top: 16px;
   right: 16px;
-
-  display: none;
+  opacity: 0;
 }
 
+.product-card:hover .add-button,
 .product-card:hover .add-wishlist-button {
-  display: flex;
-}
-
-.add-wishlist-button:active {
-  background-color: #ff4191;
-  transform: scale(1.1);
-  transition: transform 0.3s linear;
+  opacity: 1;
+  transition: opacity linear 0.3s;
 }
 
 @media screen and (max-width: 992px) {
@@ -418,15 +410,13 @@
 }
 
 @media screen and (max-width: 576px) {
-  
-    /* ------------------------------------------------------ Product carousel - carousel */
+  /* ------------------------------------------------------ Product carousel - carousel */
   .swiper-horizontal > .swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     left: 30px;
     margin: 40px 0;
     width: calc(100% - 64px);
   }
-
 
   .product-carousel {
     width: calc(100% + 64px);
