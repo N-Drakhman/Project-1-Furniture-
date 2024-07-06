@@ -14,11 +14,16 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="furniture.css" />
     <title>Simply Unique / Simply Better.</title>
   </head>
   <body>
-<!-- Navigation bar cascade -->
+    <!-- Navigation bar cascade -->
     <div class="navigation-bar">
       <a href="" class="logo">3legant<span>.</span></a>
 
@@ -43,6 +48,40 @@
     </div>
 
     <div class="webpage-body">
+
+      <!-- Swiper : Slider -->
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/big-sofa1.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/big-sofa2.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/big-sofa3.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Header -->
+      <div class="header">
+        <div class="header-slogan">
+          Simply Unique<span>/</span> Simply Better<span>.</span>
+        </div>
+        <div class="header-description">
+          3legant
+          <span
+            >is a gift & decorations store based in HCMC, Vietnam. Est since
+            2019.</span
+          >
+        </div>
+      </div>
+
       <!--  Categories cascade  -->
       <div class="categories">
         <div class="category" data-value="living">
@@ -60,6 +99,123 @@
           <div class="category-link">Shop Now</div>
         </div>
       </div>
+
+      <!-- Swiper : product carousel -->
+      <div class="new-products">
+        <div class="carousel-header">New <span>Arrivals</span></div>
+        <a href="" class="shop-link">More products</a>
+
+        <div class="carousel">
+          <div class="swiper product-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/loveseat.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">loveseat sofa</span>
+                    <span>$199.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/table-lamp.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Table Lamp</span>
+                    <span>$24.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/beige-table-lamp.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Beige Table Lamp</span>
+                    <span>$24.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/bamboo-basket.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Bamboo basket</span>
+                    <span>$24.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/toasted.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Toasted</span>
+                    <span>$224.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/toasted.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Toasted</span>
+                    <span>$224.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- Service cascade -->
       <div class="service">
@@ -85,8 +241,8 @@
           </div>
         </div>
       </div>
-      
     </div>
+
 
        <!-- footer -->
     <div class="footer">
@@ -129,5 +285,43 @@
       </div>
     </div>
     
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".slider", {
+          spaceBetween: 30,
+          // autoplay: {
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // },
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        var swiper2 = new Swiper(".product-carousel", {
+          slidesPerView: "auto",
+          direction: "horizontal",
+          spaceBetween: 30,
+          centeredSlides: false,
+          freeMode: true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          mousewheel: true,
+        });
+      </script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </body>
 </html>
