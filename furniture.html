@@ -14,9 +14,21 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/45537/keycap-3-emoji-clipart-md.png"
+    />
+
     <link rel="stylesheet" href="furniture.css" />
     <title>Simply Unique / Simply Better.</title>
   </head>
+
   <body>
     <!-- Navigation bar cascade -->
     <div class="navigation-bar">
@@ -43,6 +55,39 @@
     </div>
 
     <div class="webpage-body">
+      <!-- Swiper : Slider -->
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/big-sofa1.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/big-sofa2.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/big-sofa3.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Header -->
+      <div class="header">
+        <div class="header-slogan">
+          Simply Unique<span>/</span> Simply Better<span>.</span>
+        </div>
+        <div class="header-description">
+          3legant
+          <span
+            >is a gift & decorations store based in HCMC, Vietnam. Est since
+            2019.</span
+          >
+        </div>
+      </div>
+
       <!--  Categories cascade  -->
       <div class="categories">
         <div class="category" data-value="living">
@@ -58,6 +103,122 @@
         <div class="category" data-value="kitchen">
           <div class="category-title">Kitchen</div>
           <div class="category-link">Shop Now</div>
+        </div>
+      </div>
+
+      <!-- Swiper : product carousel -->
+      <div class="new-products">
+        <div class="carousel-header">New <span>Arrivals</span></div>
+        <a href="" class="shop-link">More products</a>
+
+        <div class="carousel">
+          <div class="swiper product-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/loveseat.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">loveseat sofa</span>
+                    <span>$199.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/table-lamp.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Table Lamp</span>
+                    <span>$24.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/beige-table-lamp.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Beige Table Lamp</span>
+                    <span>$24.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/bamboo-basket.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Bamboo basket</span>
+                    <span>$24.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/toasted.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Toasted</span>
+                    <span>$224.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product-card">
+                <div class="product-card">
+                  <img
+                    class="product-image"
+                    src="./images/toasted.svg"
+                    alt=""
+                  />
+                  <button class="add-button">Add to cart</button>
+                  <button class="add-wishlist-button">
+                    <img src="./images/wishlilst-button.svg" alt="" />
+                  </button>
+                  <div class="product-info">
+                    <span class="product-name">Toasted</span>
+                    <span>$224.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
         </div>
       </div>
 
@@ -85,63 +246,144 @@
               Phone and <span> Email support</span>
             </div>
           </div>
-        </div>
+          <!-- Banner cascade -->
+          <div class="banner">
+            <div class="banner-image"></div>
 
-        <!-- Banner cascade -->
-        <div class="banner">
-          <div class="banner-image"></div>
-
-          <div class="banner-content">
-            <div class="banner-header">
-              <div class="banner-sale">SALE UP TO 35% OFF</div>
-              <div class="banner-title">
-                HUNDREDS of
-                <span> New lower prices! </span>
+            <div class="banner-content">
+              <div class="banner-header">
+                <div class="banner-sale">SALE UP TO 35% OFF</div>
+                <div class="banner-title">
+                  HUNDREDS of
+                  <span> New lower prices! </span>
+                </div>
+                <div class="banner-description">
+                  It’s more affordable than ever to give every room in your home
+                  a stylish makeover
+                </div>
               </div>
-              <div class="banner-description">
-                It’s more affordable than ever to give every room in your home a
-                stylish makeover
+              <a href="" class="banner-link">Shop Now</a>
+            </div>
+          </div>
+
+          <!-- Blog Section Cascade -->
+          <div class="blog-section">
+            <div class="blog-section-1">
+              <div class="blog-header">Articles</div>
+              <a href="" class="blog-link">More Articles</a>
+            </div>
+
+            <div class="blog-section-2">
+              <div class="article">
+                <img src="/images/blog-image-1.svg" alt="" />
+                <div class="blog-content">
+                  <div class="blog-title">7 ways to decor your home</div>
+                  <a href="" class="blog-link">Read More</a>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="/images/blog-image-2.svg" alt="" />
+                <div class="blog-content">
+                  <div class="blog-title">Kitchen organization</div>
+                  <a href="" class="blog-link">Read More</a>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="/images/blog-image-3.svg" alt="" />
+                <div class="blog-content">
+                  <div class="blog-title">Decor your bedroom</div>
+                  <a href="" class="blog-link">Read More</a>
+                </div>
               </div>
             </div>
-            <a href="" class="banner-link">Shop Now</a>
+          </div>
+        </div>
+        <!-- webpage-body-2 -->
+      </div>
+      <!-- webpage-body -->
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-content">
+          <div class="logo-slogan">
+            <!-- <div class="footer-logo">3legant<span>.</span></div> -->
+            <a href="" class="footer-logo"> 3legant<span>.</span> </a>
+            <div class="footer-slogan">Gift & Decoration Store</div>
+          </div>
+
+          <div class="footer-navbar">
+            <a href="">Home</a>
+            <a href="">Shop</a>
+            <a href="">Product</a>
+            <a href="">Blog</a>
+            <a href="">Contact us</a>
           </div>
         </div>
 
-        <!-- Blog Section Cascade -->
-      <div class="blog-section">
-        <div class="blog-section-1">
-          <div class="blog-header">Articles</div>
-          <a href="" class="blog-link">More Articles</a>
-        </div>
-
-        <div class="blog-section-2">
-          <div class="article">
-            <img src="/images/blog-image-1.svg" alt="" />
-            <div class="blog-content">
-              <div class="blog-title">7 ways to decor your home</div>
-              <a href="" class="blog-link">Read More</a>
-            </div>
+        <div class="footer-bar">
+          <div class="copyright">
+            <div>Copyright © 2023 3legant. All rights reserved</div>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
           </div>
 
-          <div class="article">
-            <img src="/images/blog-image-2.svg" alt="" />
-            <div class="blog-content">
-              <div class="blog-title">Kitchen organization</div>
-              <a href="" class="blog-link">Read More</a>
-            </div>
-          </div>
-
-          <div class="article">
-            <img src="/images/blog-image-3.svg" alt="" />
-            <div class="blog-content">
-              <div class="blog-title">Decor your bedroom</div>
-              <a href="" class="blog-link">Read More</a>
-            </div>
+          <div class="social-icon">
+            <a href="">
+              <img src="./images/insta.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./images/youtube.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
-      
-      </div>      <!-- webpage-body-2 -->
-    </div>    <!-- webpage-body -->
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".slider", {
+          spaceBetween: 30,
+          // autoplay: {
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // },
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        var swiper2 = new Swiper(".product-carousel", {
+          slidesPerView: "auto",
+          direction: "horizontal",
+          spaceBetween: 30,
+          centeredSlides: false,
+          freeMode: true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          mousewheel: true,
+        });
+      </script>
+      <div class="help" data-value="24-7-support">
+        <div class="help-title">24/7 Support</div>
+        <div class="help-description">
+          Phone and <span> Email support</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
