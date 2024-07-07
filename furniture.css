@@ -324,6 +324,7 @@
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
+  color: black;
 }
 
 .product-price {
@@ -370,6 +371,7 @@
   top: 287px;
   left: 16px;
   opacity: 0;
+  cursor: pointer;
 }
 
 .add-button:hover {
@@ -389,6 +391,7 @@
   top: 16px;
   right: 16px;
   opacity: 0;
+  cursor: pointer;
 }
 
 .product-card:hover .add-button,
@@ -600,6 +603,7 @@
   line-height: 28px;
   max-height: 56px;
   width: 100%;
+  color: black
 }
 
 .blog-content .blog-link {
@@ -777,6 +781,7 @@
 
 .newsletter-input button {
   width: 52px;
+  cursor: pointer;
 }
 
 .newsletter-input-2 {
