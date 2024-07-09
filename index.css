@@ -804,6 +804,11 @@
   margin-top: 5px;
 }
 
+.newsletter-input:has(input:valid) button{
+  color: black;
+  transition: color linear .1s;
+}
+
 @media screen and (max-width: 1200px) {
   /* ------------------------------------------------------ header */
   .header-slogan {
