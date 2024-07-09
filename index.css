@@ -303,6 +303,8 @@
   height: 433px;
 }
 
+
+
 .product-info {
   height: 72px;
   margin-top: 12px;
@@ -603,13 +605,18 @@
   line-height: 28px;
   max-height: 56px;
   width: 100%;
-  color: black
+  color: black;
 }
 
 .blog-content .blog-link {
   width: 103px;
   height: 28px;
   border-bottom: 2px solid black;
+}
+
+.article:hover img {
+  box-shadow: 3px -7px 0px #616161;
+  transition: box-shadow linear 0.1s;
 }
 
 /* ------------------------------------------------------- footer */
@@ -760,6 +767,8 @@
   align-items: center;
   justify-content: space-between;
 }
+
+
 
 .newsletter-input button,
 .newsletter-input input {
@@ -978,6 +987,8 @@
     width: 231px;
     height: 392px;
   }
+
+
 
   /* ------------------------------------------------------ Product card */
   .product-image {
